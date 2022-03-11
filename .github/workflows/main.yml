@@ -3,7 +3,7 @@ name: Python Application
 defaults:
   run:
     shell: bash
-    working-directory: ./delivery
+    working-directory: .
 
 on:
   push:
