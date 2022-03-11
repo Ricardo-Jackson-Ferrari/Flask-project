@@ -1,4 +1,3 @@
-from click import option
 from setuptools import find_packages, setup
 
 
