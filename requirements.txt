@@ -1,2 +1,4 @@
 flask
-flask_sqlalchemy
+flask-sqlalchemy
+flask-migrate
+flask-admin
