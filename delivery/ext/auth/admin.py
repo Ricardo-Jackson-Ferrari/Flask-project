@@ -10,3 +10,4 @@ class UserAdmin(ModelView):
     column_formatters = {'email': format_user}
     column_list = ('name', 'email', 'admin')
     form_columns = ('name', 'email', 'password', 'admin')
+    
