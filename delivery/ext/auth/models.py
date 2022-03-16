@@ -7,3 +7,6 @@ class User(db.Model):
     password = db.Column("password", db.Unicode)
     admin = db.Column("admin", db.Boolean)
     name = db.Column("name", db.Unicode)
+
+    def __repr__(self):
+        return f'[id]: {self.id} [user]: {self.name.title()}'
