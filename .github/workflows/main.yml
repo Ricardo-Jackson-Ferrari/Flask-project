@@ -28,9 +28,9 @@ jobs:
       run: |
        make install
 
-    - name: Database Migrations
-      run: |
-       make init_db
+    # - name: Database Migrations
+    #   run: |
+    #    make init_db
        
     - name: Run tests
       run: |
