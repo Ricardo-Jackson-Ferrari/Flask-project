@@ -1,1 +1,1 @@
-web: gunicorn main:delivery/app
+web: gunicorn delivery app:create_app
