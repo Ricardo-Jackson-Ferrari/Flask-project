@@ -1,5 +1,6 @@
-from flask import render_template
-from flask import Blueprint
+from flask import Blueprint, render_template, request
+
+from delivery.ext.auth.form import UserForm
 
 
 bp = Blueprint('site', __name__)
@@ -11,6 +12,12 @@ def index():
 
 
 @bp.route('/about')
-@bp.route('/sobre')
 def about():
     return render_template('about.html')
+
+
+@bp.route('/signup', methods=['POST', 'GET'])
+def signup():
+    form = UserForm()
+    # __import__('ipdb').set_trace()
+    return render_template('userForm.html', form=form)

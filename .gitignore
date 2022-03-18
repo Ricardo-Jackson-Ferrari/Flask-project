@@ -1,3 +1,4 @@
 .env
 teste.py
 delivery/delivery.db
+.secrets.toml

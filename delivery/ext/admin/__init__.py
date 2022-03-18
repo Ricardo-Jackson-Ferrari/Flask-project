@@ -9,8 +9,8 @@ admin = Admin()
 
 
 def init_app(app):
-    admin.name = 'delivery'
-    admin.template_mode = 'bootstrap4'
+    admin.name = app.config.get('ADMIN_NAME', 'DeliveryFoods')
+    admin.template_mode = app.config.get('ADMIN_TEMPLATE_MODE', 'bootstrap4')
     admin.init_app(app)
 
     admin.add_view(StoreUser(Store, db.session))

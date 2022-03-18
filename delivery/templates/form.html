@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block main %}
+<form action="/receiver" method="post" enctype="multipart/form-data">
+    <div>
+        <label>Username: </label>
+        <input type="text" name="username"/>
+    </div>
+    <div>
+        <label>Email: </label>
+        <input type="email" name="email"/>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+{% endblock main %}
