@@ -6,4 +6,3 @@ flask-wtf
 dynaconf
 email_validator
 gunicorn
-flask-debugtoolbar

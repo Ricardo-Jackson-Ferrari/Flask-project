@@ -10,3 +10,4 @@ class User(db.Model):
 
     def __repr__(self):
         return f'[id]: {self.id} [user]: {self.name.title()}'
+        

@@ -5,7 +5,6 @@ from delivery.ext.auth.models import User
 from flask import flash
 
 def format_user(self, request, user, *args):
-    # return user.email
     return user.email.replace(user.email[user.email.rindex('@'):], '*'*len(user.email[user.email.rindex('@'):]))
 
 class UserAdmin(ModelView):
@@ -16,7 +15,7 @@ class UserAdmin(ModelView):
 
     column_searchable_list = ['email']
     column_filters = ['admin']
-    
+
     can_delete = True
     can_create = True
     can_edit = False

@@ -1,5 +1,6 @@
 {% macro build(form) %}
     {% for k, v in form.data.items() if k != "csrf_token" %}
+    {{ form.csrf_token}}
         <div style="white-space: nowrap;width: fit-content;">
             {{ form[k].label }}
             {{ form[k](size=20, class_='input')}}
