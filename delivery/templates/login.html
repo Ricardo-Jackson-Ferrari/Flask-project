@@ -5,9 +5,9 @@
 {% endblock extra_css %}
 {% block main %}
 <div class="column is-one-third">
-    <form class="user-register-form" action="{{url_for('site.signup')}}" method="post" enctype="multipart/form-data">
+    <form class="user-register-form" action="{{ url_for('site.login') }}" method="post" enctype="multipart/form-data">
             {{ render_form.build(form) }}
-        <button class="button is-dark is-rounded is-medium is-fullwidth" type="submit">Cadastrar</button>
+        <button class="button is-dark is-rounded is-medium is-fullwidth" type="submit">Conectar</button>
     </form>
 </div>
 {% endblock main %}
